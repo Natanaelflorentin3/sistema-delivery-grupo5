@@ -1,17 +1,22 @@
 import swaggerAutogen from "swagger-autogen";
+import fs from "node:fs";
 
 const doc = {
   info: {
-    title: "API de gestion para restaurante 🍽️🍽️",
+    title: "API de gestion para restaurante 🍽️",
     description: "Documentacion generada automaticamente por swagger-autogen",
     version: "1.0.0",
   },
-  host: "localhost:3000",
 };
-//archivo generado
-const outputFile = "./swagger-output.json";
 
-//archivos q seran leidos por swagger-autogen
+const outputFile = "./src/swagger-output.json";
 const routes = ["./src/index.ts"];
 
-swaggerAutogen()(outputFile, routes, doc);
+swaggerAutogen()(outputFile, routes, doc).then(() => {
+  const generado = JSON.parse(fs.readFileSync(outputFile, "utf-8"));
+  delete generado.host;
+  delete generado.basePath;
+  delete generado.schemes;
+  fs.writeFileSync(outputFile, JSON.stringify(generado, null, 2));
+  console.log("Host, basePath y schemes eliminados del swagger-output.json generado");
+});
