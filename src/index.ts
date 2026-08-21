@@ -7,7 +7,8 @@ import repartidoresRouter from "./routes/repartidores";
 import productosRouter from "./routes/productos";
 import { cargarDatosProductos } from "./data/productos";
 import clientesRouter from "./routes/cliente";
-
+import pedidosRouter from "./routes/pedidos";
+import { cargarDatosPedidos } from "./data/pedidos";
 const app = express();
 const PORT = 3000;
 
@@ -34,8 +35,10 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/repartidores", repartidoresRouter);
 app.use("/productos", productosRouter);
 app.use("/clientes", clientesRouter);
+app.use("/pedidos", pedidosRouter);
 
 app.listen(PORT, async () => {
   await cargarDatosProductos();
+  await cargarDatosPedidos();
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
