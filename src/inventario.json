@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nombre": "Coca Cola",
+    "categoria": "Refresco",
+    "precio": 17,
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "nombre": "Pepsi",
+    "categoria": "Refresco",
+    "precio": 16,
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Agua Mineral",
+    "categoria": "Bebida",
+    "precio": 10,
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Jugo de Naranja",
+    "categoria": "Bebida",
+    "precio": 22,
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "nombre": "Papas Fritas",
+    "categoria": "Botana",
+    "precio": 25,
+    "disponible": true
+  },
+  {
+    "id": 6,
+    "nombre": "Galletas",
+    "categoria": "Dulces",
+    "precio": 18,
+    "disponible": false
+  },
+  {
+    "id": 7,
+    "nombre": "Chocolate",
+    "categoria": "Dulces",
+    "precio": 30,
+    "disponible": true
+  },
+  {
+    "id": 8,
+    "nombre": "Pan Integral",
+    "categoria": "Panadería",
+    "precio": 35,
+    "disponible": true
+  },
+  {
+    "id": 9,
+    "nombre": "Leche",
+    "categoria": "Lácteos",
+    "precio": 28,
+    "disponible": true
+  },
+  {
+    "id": 10,
+    "nombre": "Yogur",
+    "categoria": "Lácteos",
+    "precio": 20,
+    "disponible": false
+  }
+]
