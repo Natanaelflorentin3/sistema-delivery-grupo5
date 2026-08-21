@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc",
-    "start": "node index.ts"
-  },
+  "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+  "build": "tsc",
+  "start": "node dist/index.js",
+  "swagger": "ts-node src/swagger.ts"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Natanaelflorentin3/sistema-delivery-grupo5.git"
@@ -32,4 +33,5 @@
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
   }
+  
 }
