@@ -6,7 +6,7 @@ export let listaPedidos: pedido[] = [];
 
 export async function cargarDatosPedidos() {
   try {
-    const ruta = path.resolve("./src/data/pedidos.json");
+    const ruta = path.resolve("./src/data/pedidos.data.json");
     const data = await fs.readFile(ruta, "utf-8");
     listaPedidos = JSON.parse(data);
     console.log(`Pedidos cargados en memoria: ${listaPedidos.length}`);
