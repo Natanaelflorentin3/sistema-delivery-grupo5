@@ -1,20 +1,20 @@
-interface productos {
+ interface productos {
   id: number;
   nombre: string;
-  categoria: string;
   precio: number;
+  categoria: string;
   disponible: boolean;
 }
-interface crearproducto {
+ interface crearproducto {
   nombre: string;
   precio: number;
   categoria: string;
 }
-interface actualizarproducto {
-  nombre: string;
-  precio: number;
-  categoria: string;
-  disponible: boolean;
+ interface actualizarproducto {
+  nombre?: string;
+  precio?: number;
+  categoria?: string;
+  disponible?: boolean;
 }
 interface productosfiltrados {
   nombre?: string;
@@ -22,7 +22,7 @@ interface productosfiltrados {
   categoria?: string;
   disponible?: boolean;
 }
-interface idParam {
+ interface idParam {
   id: string;
 }
 

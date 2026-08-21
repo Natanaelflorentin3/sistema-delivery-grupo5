@@ -4,6 +4,8 @@ import swaggerUi from "swagger-ui-express";
 import fs from "node:fs";
 import path from "node:path";
 import repartidoresRouter from "./routes/repartidores";
+import productosRouter from "./routes/productos";
+import { cargarDatosProductos } from "./data/productos";
 
 const app = express();
 const PORT = 3000;
@@ -29,7 +31,9 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.use("/repartidores", repartidoresRouter);
+app.use("/productos", productosRouter);
 
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
+  await cargarDatosProductos();
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
