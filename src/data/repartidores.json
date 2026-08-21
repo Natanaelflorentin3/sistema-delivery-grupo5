@@ -1,0 +1,30 @@
+[
+  {  "id": 1, 
+     "nombre": "Paolo", 
+     "vehiculo": "Auto",
+     "telefono": "3411234567",
+     "activo": true 
+},
+  { "id": 2,
+      "nombre": "Yair"
+      , "vehiculo": "Elicoptero",
+       "telefono": "3417654321",
+        "activo": false 
+},
+
+   {    "id": 3,
+      "nombre": "Natanael"
+      , "vehiculo": "Barco",
+       "telefono": "3430094321",
+        "activo": true
+}, 
+
+{    "id": 4,
+      "nombre": "Efrain"
+      , "vehiculo": "Avion",
+       "telefono": "3412968321",
+        "activo": false 
+}
+ 
+
+]
