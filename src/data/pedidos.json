@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "clienteId": 101,
+    "fecha": "20-08-2026",
+    "estado": "preparando",
+    "detalles": "muy caliente",
+    "total": 70
+  },
+
+  {
+    "id": 2,
+    "clienteId": 102,
+    "fecha": "20-08-2026",
+    "estado": "entregado",
+    "detalles": "sin picante",
+    "total": 55
+  },
+
+  {
+    "id": 3,
+    "clienteId": 103,
+    "fecha": "19-08-2026",
+    "estado": "preparando",
+    "detalles": "a tiempo, sin mucho condimento",
+    "total": 100
+  }
+]

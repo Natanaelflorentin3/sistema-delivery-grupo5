@@ -1,20 +1,4 @@
-/* import express from "express";
-
-const app = express();
-const PORT = 3000;
-
-app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.send("API Sistema Delivery Grupo 5 funcionando 🚀");
-});
-
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
- */
-
-import express from 'express';
+/* import express from 'express';
 import type {NextFunction, Request, Response} from "express"
 import { error } from "node:console";
 import fs from "node:fs/promises";
@@ -28,12 +12,6 @@ import pedidosRouter from './routes/pedidos.routes.js'
 import { cargarDatos } from './data/pedidos.data.js';
 
 app.use('/pedidos', pedidosRouter);
-
-
-import swaggerUi from 'swagger-ui-express';
-import swaggerOutput from '../src/swagger-output.json' with {type: 'json'};
-
-app.use('/api-pedidos-docs', swaggerUi.serve, swaggerUi.setup(swaggerOutput));
 
 
 
@@ -59,10 +37,12 @@ app.get ("/pedidos", async function(req: Request, res: Response) {
 
 
 app.get ("/", async function(req: Request, res: Response) {
-    res.send(`Bienvenido al servidor de paolo`);
+    res.send(`Bienvenido al servidor de paolo
+        . acceda a: http://localhost:3000/api/status
+        . o tambien a: http://localhost:3000/api/estudiantes`);
 });
 
 app.listen(PORT, async function() {
     console.log(`AQUI SE ENCUENTRA EL SERVIDOR --> http://localhost:3000/`);
     await cargarDatos();
-})
+}) */
