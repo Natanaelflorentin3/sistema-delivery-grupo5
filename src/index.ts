@@ -6,6 +6,7 @@ import path from "node:path";
 import repartidoresRouter from "./routes/repartidores";
 import productosRouter from "./routes/productos";
 import { cargarDatosProductos } from "./data/productos";
+import clientesRouter from "./routes/cliente";
 
 const app = express();
 const PORT = 3000;
@@ -32,6 +33,7 @@ app.get("/", (req: Request, res: Response) => {
 
 app.use("/repartidores", repartidoresRouter);
 app.use("/productos", productosRouter);
+app.use("/clientes", clientesRouter);
 
 app.listen(PORT, async () => {
   await cargarDatosProductos();
